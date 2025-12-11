@@ -148,3 +148,7 @@ window.addEventListener("keydown", e => {
 ticketBtn.onclick = () => {
   window.location.href = "yes_page.html";
 };
+
+// === START GAME ===
+generateMaze();
+drawMaze();
