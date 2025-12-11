@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Laberinto – Día 3</title>
+    <style>
+        body {
+            background: #0b1523;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #mazeCanvas {
+            background: #06101c;
+            margin-top: 20px;
+            border: 2px solid #3a516b;
+        }
+
+        #status {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        #ticket {
+            display: none;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #5aa9ff;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #ticket:hover {
+            background: #7bc0ff;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Will you be my Valentine?</h1>
-        <div class="buttons">
-            <button class="yes-button" onclick="handleYesClick()">Yes</button>
-            <button class="no-button" onclick="handleNoClick()">No</button>
-        </div>
-        <div class="gif_container">
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
-        </div>
-    </div>
-    <script src="script.js"></script>
+
+    <h1>Día 3 ✨</h1>
+    <p>Completá el laberinto para reclamar tu regalito…</p>
+
+    <canvas id="mazeCanvas" width="630" height="450"></canvas>
+    <p id="status"></p>
+
+    <button id="ticket">🎟️ Ticket</button>
+
+    <script src="maze.js"></script>
 </body>
 </html>
