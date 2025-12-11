@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knew you would say yes!</title>
-    <link rel="stylesheet" href="./yes_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día 3 - Desbloqueá tu Ticket</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0e1420;
+      color: #e8efff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ff6b9d;
+      text-align: center;
+    }
+
+    #mazeCanvas {
+      background: #06101c;
+      border: 2px solid #243447;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    #status {
+      margin-top: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    #ticket {
+      margin-top: 25px;
+      display: none;
+      padding: 12px 18px;
+      background: #ff6b9d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="header_text">Knew you would say yes!</h1>
-        <div class="gif_container">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
-        </div>
-    </div>
+
+  <h1>Día 3  
+  <br>Encontrá la salida para desbloquear tu regalo </h1>
+
+  <canvas id="mazeCanvas" width="500" height="400"></canvas>
+
+  <div id="status">Movete con las flechas o WASD</div>
+
+  <button id="ticket">Ver Ticket 🎟️</button>
+
+  <script src="maze.js"></script>
+
 </body>
 </html>
